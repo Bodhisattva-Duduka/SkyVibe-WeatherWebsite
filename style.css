@@ -7,6 +7,7 @@
     color: #073A5F;
 }
 
+
 header {
     display: flex;
     justify-content: center;
@@ -27,6 +28,7 @@ article {
     padding: 20px;
     border-radius: 25px;
     background-color: #9DD3ED;
+    padding-bottom: 30px;
 }
 
 .dashboard {
@@ -51,16 +53,19 @@ article {
     background-color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    width: 90%;
 }
 
 .search-area input {
     border-radius: 15px;
-    height: 40px;
+    height: 45px;
     font-size: 20px;
     font-weight: 500;
     padding-left: 10px;
     border: none;
     outline: none;
+    width: 100%;
+
 }
 
 .search-area input::placeholder {
@@ -81,5 +86,62 @@ article {
     align-items: center;
     border-radius: 15px;
     font-weight: 500;
-    padding: 5px;
+    padding: 8px;
 }
+
+.result-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.major-area{
+    display: flex;
+}
+
+.city-name-weather{
+    display: flex;
+    flex-direction: column;
+}
+
+.city-name {
+    font-size: 45px;
+}
+
+.temperature{
+    font-size: 45px;
+}
+
+.weather-description{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.line{
+    width: 100%;
+    height: 1.2px;
+    background-color: #DFEAF2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.humidity-wind{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.humidity-area div{
+    display: flex;
+    gap: 5px;
+}
+
+.wind-area div {
+    display: flex;
+    gap: 5px;
+}
+
