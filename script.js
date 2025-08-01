@@ -5,9 +5,6 @@ document.querySelector('form').addEventListener('submit', e => {
     const cityName = document.querySelector('#city-name-search').value
     console.log(cityName)
     fetchLocation(cityName)
-
-
-
 })
 
 
