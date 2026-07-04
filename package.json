@@ -1,0 +1,25 @@
+{
+  "name": "weather-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bodhisattva-Duduka/SkyVibe-WeatherWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Bodhisattva-Duduka/SkyVibe-WeatherWebsite/issues"
+  },
+  "homepage": "https://github.com/Bodhisattva-Duduka/SkyVibe-WeatherWebsite#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
