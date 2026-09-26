@@ -1,4 +1,6 @@
-// submit form button
+
+const appid = 'db4ec9538bf2a1fcdffb50c08360a0c3'
+
 
 document.querySelector('form').addEventListener('submit', e => {
     e.preventDefault()
@@ -8,10 +10,8 @@ document.querySelector('form').addEventListener('submit', e => {
 })
 
 
-// place name to coordinates converter
 
 async function fetchLocation(searchValue) {
-    const appid = 'db4ec9538bf2a1fcdffb50c08360a0c3'
     
     let locationData = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=5&appid=${appid}`)
     let locationDataJson = await locationData.json()
@@ -21,7 +21,6 @@ async function fetchLocation(searchValue) {
     
     console.log(locationDataJson, latitude, longitude)
 
-    // UI element changes
     
     document.body.querySelector('.city-name').innerHTML = searchValue
     
@@ -30,10 +29,8 @@ async function fetchLocation(searchValue) {
 
 
 
-// coordinates to weather info finder
 
 async function findWeather(latitude, longitude) {
-    const appid = 'db4ec9538bf2a1fcdffb50c08360a0c3'
     
     let locationData = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${appid}`)
     let locationDataJson = await locationData.json()
@@ -47,7 +44,6 @@ async function findWeather(latitude, longitude) {
     
     console.log(temperature, humidity, windSpeed, weatherMain)
 
-    // UI element changes
 
     let Celsius = kelvinToCelsius(temperature)
 
@@ -60,7 +56,6 @@ async function findWeather(latitude, longitude) {
 }
 
 
-// kelvin to celsius converter
 
 function kelvinToCelsius(kelvinTemp) {
     let Celsius = kelvinTemp - 273.15
